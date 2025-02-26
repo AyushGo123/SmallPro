@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.birthday-title, .sorry-title {
+    font-size: 4rem;
+    color: #ffcc00;
+}
+
+.birthday-message, .sorry-message {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+.photo img:hover {
+    transform: scale(1.1);
+}
+
+.next-button {
+    background-color: #ffcc00;
+    color: #111;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+.hidden {
+    display: none;
+}
+
+.message-box {
+    background: #222;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.message-box p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #ffcc00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
